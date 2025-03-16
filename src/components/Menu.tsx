@@ -8,7 +8,7 @@ const menuItems = [
       {
         icon: "/home.png",
         label: "Home",
-        href: "/",
+        href: "",
         visible: ["admin", "teacher", "student", "parent"],
       },
       {
@@ -78,12 +78,6 @@ const menuItems = [
         visible: ["admin", "teacher", "student", "parent"],
       },
       {
-        icon: "/message.png",
-        label: "Messages",
-        href: "/list/messages",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
-      {
         icon: "/announcement.png",
         label: "Announcements",
         href: "/list/announcements",
@@ -97,13 +91,7 @@ const menuItems = [
       {
         icon: "/profile.png",
         label: "Profile",
-        href: "/profile",
-        visible: ["admin", "teacher", "student", "parent"],
-      },
-      {
-        icon: "/setting.png",
-        label: "Settings",
-        href: "/settings",
+        href: "",
         visible: ["admin", "teacher", "student", "parent"],
       },
       {

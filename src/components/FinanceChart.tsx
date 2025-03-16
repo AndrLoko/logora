@@ -42,8 +42,8 @@ const data = [
   },
   {
     name: 'Aug',
-    income: 3490,
-    exponse: 4300,
+    income: 2490,
+    exponse: 7300,
   },
   {
     name: 'Jul',
@@ -52,18 +52,18 @@ const data = [
   },
   {
     name: 'Oct',
-    income: 3490,
+    income: 4890,
     exponse: 4300,
   },
   {
     name: 'Nov',
-    income: 3490,
-    exponse: 4300,
+    income: 3790,
+    exponse: 4500,
   },
   {
     name: 'Dec',
-    income: 3490,
-    exponse: 4300,
+    income: 3200,
+    exponse: 4850,
   },
 ];
 
@@ -88,15 +88,16 @@ const FinanceChart = () => {
                     right: 30,
                     left: 20,
                     bottom: 5,
+
                 }}
                 >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
+                <CartesianGrid strokeDasharray="3 3" stroke="#ddd"/>
+                <XAxis dataKey="name" axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false} tickMargin={10}/>
+                <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false} tickMargin={20}/>
                 <Tooltip />
-                <Legend />
-                <Line type="monotone" dataKey="income" stroke="#C3EBFA" activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="expense" stroke="#CFCEFF" />
+                <Legend align='center' verticalAlign='top' wrapperStyle={{paddingTop: "10px", paddingBottom: "30px"}}/>
+                <Line type="monotone" dataKey="income" stroke="#C3EBFA" strokeWidth={5} />
+                <Line type="monotone" dataKey="exponse" stroke="#CFCEFF" strokeWidth={5}  />
                 </LineChart>
             </ResponsiveContainer>
         </div>  
