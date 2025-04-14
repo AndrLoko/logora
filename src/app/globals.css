@@ -75,5 +75,13 @@
 }
 
 .rbc-event:nth-child(1) {
-    background-color: #e2f8ff !important;
+    background-color: #ddaa04 !important;
+}
+
+.rbc-event:nth-child(2) {
+    background-color: #8aeb64 !important;
+}
+
+.rbc-event:nth-child(3) {
+    background-color: #15c0b7 !important;
 }
