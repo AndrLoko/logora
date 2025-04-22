@@ -6,7 +6,7 @@ const Table = ({ columns, renderRow, data }:
     data: any[];
 }) => {
     return (
-        <table className='w-full mt-4'>
+        <table className='w-full mt-10'>
             <thead className='text-left text-gray-500'>
                 <tr>
                     {columns.map((col)=>(

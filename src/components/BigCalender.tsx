@@ -21,11 +21,11 @@ const BigCalendar = () => {
       events={calendarEvents}
       startAccessor="start"
       endAccessor="end"
-      views={["work_week", "day", "month"]} // можно включить "month" для отладки
+      views={["work_week", "day", "month"]} 
       view={view}
       style={{ height: "98vh" }}
       onView={handleOnChangeView}
-      defaultDate={new Date(2024, 7, 12)} // ✅ Август 2024
+      defaultDate={new Date(2024, 7, 12)} 
       min={new Date(2024, 7, 12, 8, 0)}
       max={new Date(2024, 7, 12, 17, 0)}
     />
